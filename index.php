@@ -1,5 +1,6 @@
 <?php 
 require_once('includes/config.php');
+$queryFilms = "SELECT filmTitle. filmImage FROM Films WHERE filmID = 10";
 ?>
 
 
