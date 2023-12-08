@@ -31,8 +31,12 @@ include("includes/header.php");
       <section class="homePage">
 		<!-- Featured Films Here -->
     <?php
-      echo "<h2>{$obj->filmTitle}</h2>";
-      echo "<p>{$obj->filmDescription}</p>";
+      while ($obj = $resultFilms -> fetch_object()) {
+        echo "<div>";
+        echo "<h3>{$obj->filmTitle}</h3>";
+        echo "<p>{$obj->filmDescription}</p>";
+        echo "</div>";
+      }
     ?>
       </section>
 		</main>
