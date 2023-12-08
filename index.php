@@ -31,6 +31,9 @@ include("includes/header.php");
       </div>
       <section class="homePage">
 		<!-- Featured Films Here -->
+    <?php
+      echo "<h2>{$obj->filmTitle}</h2>";
+    ?>
       </section>
 		</main>
     </div>
