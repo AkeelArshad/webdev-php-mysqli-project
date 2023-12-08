@@ -1,8 +1,7 @@
 <?php 
 require_once('includes/config.php');
-$queryFilms = "SELECT filmTitle, filmImage, filmDescription FROM Films WHERE filmID = 10";
+$queryFilms = "SELECT * FROM Films ORDER BY releaseDate DESC LIMIT 0,4";
 $resultFilms = $mysqli->query($queryFilms);
-$obj = $resultFilms->fetch_object();
 ?>
 
 
